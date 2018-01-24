@@ -1,13 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "Voting", "Voting\Voting.sfproj", "{AF958126-CB44-487A-8292-2D27594966DE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VotingWeb", "VotingWeb\VotingWeb.csproj", "{264D5429-04DC-47B8-8724-6BC5C72595D5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VotingData", "VotingData\VotingData.csproj", "{EFD19B4D-8966-48B7-B1BA-A8DB6BDEEB4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{6B7BC73E-5E7D-443D-BF9F-4752470EB828}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\build.cake = scripts\build.cake
+		scripts\build.ps1 = scripts\build.ps1
+		scripts\sfctl.ps1 = scripts\sfctl.ps1
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,5 +53,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7FEECD65-2775-47EE-941A-CD45D52805E1}
 	EndGlobalSection
 EndGlobal
